@@ -26,7 +26,7 @@ const RegisterPage = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch("http://localhost:2000/RegisterPage", {
+            const response = await fetch("https://a-a6rx.onrender.com/RegisterPage", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
