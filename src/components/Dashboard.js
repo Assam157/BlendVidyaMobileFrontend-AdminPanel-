@@ -17,7 +17,7 @@ const Dashboard = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:2000/dashboard');
+            const response = await axios.get('https://a-a6rx.onrender.com/dashboard');
             setApplications(response.data.applications);
             setUsers(response.data.users);
             setHrs(response.data.hrs);
@@ -30,7 +30,7 @@ const Dashboard = () => {
 
     const handleDelete = async (type, id) => {
         try {
-            await axios.delete(`http://localhost:2000/dashboard/${type}/${id}`);
+            await axios.delete(`https://a-a6rx.onrender.com/dashboard/${type}/${id}`);
             toast.success(`${type} deleted successfully`);
             fetchData(); // Refresh data after deletion
         } catch (err) {
