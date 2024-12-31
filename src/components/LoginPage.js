@@ -26,7 +26,7 @@ const LoginPage = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch("http://localhost:2000/AdminLogin", {
+            const response = await fetch("https://a-a6rx.onrender.com/AdminLogin", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
